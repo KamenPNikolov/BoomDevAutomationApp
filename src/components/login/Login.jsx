@@ -12,9 +12,9 @@ export default function Login(){
 
     return (
         <div className={classNames(styles["login-form"])}>
-        <TextField className={classNames(styles["text-field"])} InputProps={{startAdornment: <InputAdornment position="start"><EmailIcon></EmailIcon></InputAdornment>}}> </TextField>
-        <TextField className={classNames(styles["text-field"])} InputProps={{startAdornment: <InputAdornment position="start"><LockIcon></LockIcon></InputAdornment> }}> </TextField>
-        <Button className={classNames(styles["button"])} variant="contained" >LOGIN</Button>
+        <TextField className={classNames(styles["text-field"])} sx={{marginTop:"5%",marginLeft:"10%"}} InputProps={{startAdornment: <InputAdornment position="start"><EmailIcon></EmailIcon></InputAdornment>}}> </TextField>
+        <TextField className={classNames(styles["text-field"])}  sx={{marginTop:"5%",marginLeft:"10%"}} InputProps={{startAdornment: <InputAdornment position="start"><LockIcon></LockIcon></InputAdornment> }}> </TextField>
+        <Button className={classNames(styles["button"])} sx={{marginTop:"5%",marginLeft:"10%",marginBottom:"5%"}}  variant="contained" >LOGIN</Button>
         </div>
     );
 }

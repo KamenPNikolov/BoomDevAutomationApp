@@ -1,0 +1,23 @@
+@use "../../src/styles/colors.scss";
+
+.wrapper {
+  padding: 100px;
+  background-color: colors.$primary_main;
+}
+
+.container {
+    
+   align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  width: 25%;
+  margin-bottom:-30%;
+  margin-left:37%;
+  align-items: center;
+  justify-content: center;
+}
+.login{
+    width:100%;
+}
