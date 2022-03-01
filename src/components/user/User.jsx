@@ -4,7 +4,7 @@ import classNames from "classnames";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
-
+import * as React from 'react';
 
 export default function User({avatar,name,size}){
 
