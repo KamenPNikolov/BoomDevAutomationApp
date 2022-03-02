@@ -11,11 +11,11 @@ export default function User({avatar,name,size}){
     return (
     <div className={classNames(styles["user-container"])}>
     <Container maxWidth="xs" > 
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid item xs={2}>
+        <Grid container direction="row" spacing={2} justifyContent="center" alignItems="center">
+            <Grid item xs={3}>
                 <Avatar src={avatar} sx={{width: size,height: size}}></Avatar>
             </Grid>
-            <Grid item xs={4}> 
+            <Grid item xs={9}> 
             <Typography variant="h3">{name}</Typography>
             </Grid>
         </Grid>

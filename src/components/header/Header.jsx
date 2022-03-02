@@ -5,20 +5,22 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import * as React from 'react';
-import { Stack } from "@mui/material";
+import { Paper, Stack } from "@mui/material";
 
 export default function Header({left,right}){
 
     return (
         <div className={classNames(styles["header-wrapper"])}>
-            <Stack direction="row" justifyContent="space-between" alignItems="center">
-            <Container maxWidth="sm">
+           <Paper className={classNames(styles["paper"])}>
+           <Stack direction="row" spacing={12} justifyContent="center" alignItems="center">
+            <Container maxWidth="sm" className={classNames(styles["left"])} >
             {left}
             </Container>
-            <Container maxWidth="sm">
+            <Container maxWidth="sm" className={classNames(styles["right"])}>
             {right}
             </Container>
             </Stack>
+            </Paper>
         </div>
 
     );
