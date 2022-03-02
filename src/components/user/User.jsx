@@ -13,10 +13,10 @@ export default function User({avatar,name,size}){
     <Container maxWidth="xs" > 
         <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid item xs={2}>
-                <Avatar src={avatar} sx={{width: {size},height:{size}}}></Avatar>
+                <Avatar src={avatar} sx={{width: size,height: size}}></Avatar>
             </Grid>
             <Grid item xs={4}> 
-            <Typography variant="h4">{name}</Typography>
+            <Typography variant="h3">{name}</Typography>
             </Grid>
         </Grid>
     </Container>
