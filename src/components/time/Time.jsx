@@ -1,14 +1,14 @@
 import styles from "./Time.module.scss";
 import classNames from "classnames";
 import Typography from "@mui/material/Typography";
-import * as React from 'react';
-import Stack from "@mui/material/Stack";
+import {useEffect,useState} from 'react';
+
 
 
 export default function Time(){
-    const [hours,setHours] = React.useState(0);
-    const [minutes,setMinutes] = React.useState(0);
-    React.useEffect(() => {
+    const [hours,setHours] = useState(0);
+    const [minutes,setMinutes] = useState(0);
+    useEffect(() => {
        const interval = setInterval(()=>{
             const now = new Date();
             setHours(now.getHours());
