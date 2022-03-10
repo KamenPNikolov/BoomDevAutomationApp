@@ -1,0 +1,10 @@
+@use "../../styles/colors";
+
+.wrapper{
+    margin-left:40%;
+    border-radius:15px;
+    background-color: colors.$secondary_main_contrast;
+    min-height: 300px;
+    max-width:600px;
+    
+}
