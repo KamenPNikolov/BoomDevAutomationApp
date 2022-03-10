@@ -1,0 +1,12 @@
+@use "../../styles/colors";
+
+.card{
+    margin-left:40%;
+    //color: colors.$primary_main_contrast;
+    
+   
+}
+.content{
+    background-color: rgba(colors.$primary_main,0.1);
+    border-color:rgba(colors.$primary_main,0.25) ;
+}
