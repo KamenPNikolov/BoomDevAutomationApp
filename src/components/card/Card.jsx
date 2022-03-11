@@ -6,12 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from "@mui/material/CardContent"
 
 
+
 export default function Card({iconUrl="",outlined=false, onClick}){
 
     return (        
-    <myModule.Card  className={classNames(styles["card"])} variant = {outlined?"outlined":""} sx={{ width: 250,height: 200}}>
+    <myModule.Card  className={classNames(styles["card"])} variant = {outlined?"outlined":""} sx={{ width: 150,height: 150}}>
         <CardContent  className={classNames(styles["content"])} >
-            {iconUrl && <img height={150} width = {150} src={iconUrl} style={{marginLeft:"15%"}}></img>}
+            {iconUrl && <img height={120} width = {120} src={iconUrl} style={{marginLeft:"2%"}}></img>}
         </CardContent>
         </myModule.Card>
     
